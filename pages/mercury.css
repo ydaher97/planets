@@ -54,7 +54,7 @@ body_eyal {
   align-items: end;
 }
 
-.earth {
+.earth_mercury {
   position: absolute;
   top: 0;
   bottom: 40px ;
@@ -69,7 +69,66 @@ body_eyal {
   box-shadow: -20px -20px 50px 2px #000 inset, 0 0 20px #000;
   animation: spin 30s linear alternate infinite;
 }
-
+.earth_saturn {
+  position: absolute;
+  top: 0;
+  bottom: 40px ;
+  left: 500px;
+  margin: auto;
+  right: 0;
+  height: 400px;
+  width: 400px;
+  background-image: url(https://globalnews.ca/wp-content/uploads/2014/04/enceladus.jpg?quality=85&strip=all);
+  border-radius: 50%;
+  background-size: cover;
+  box-shadow: -20px -20px 50px 2px #000 inset, 0 0 20px #000;
+  animation: spin 30s linear alternate infinite;
+}
+.earth_jupiter {
+  position: absolute;
+  top: 0;
+  bottom: 40px ;
+  left: 500px;
+  margin: auto;
+  right: 0;
+  height: 400px;
+  width: 400px;
+  background-image: url(https://globalnews.ca/wp-content/uploads/2014/04/enceladus.jpg?quality=85&strip=all);
+  border-radius: 50%;
+  background-size: cover;
+  box-shadow: -20px -20px 50px 2px #000 inset, 0 0 20px #000;
+  animation: spin 30s linear alternate infinite;
+}
+.earth_earth {
+  position: absolute;
+  top: 0;
+  bottom: 40px ;
+  left: 500px;
+  margin: auto;
+  right: 0;
+  height: 400px;
+  width: 400px;
+  background-image: url(https://www.nationsonline.org/gallery/Continents/Africa-continent.jpg);
+  border-radius: 50%;
+  background-size: cover;
+  box-shadow: -20px -20px 50px 2px #000 inset, 0 0 20px #000;
+  animation: spin 30s linear alternate infinite;
+}
+.earth_venus {
+  position: absolute;
+  top: 0;
+  bottom: 40px ;
+  left: 500px;
+  margin: auto;
+  right: 0;
+  height: 400px;
+  width: 400px;
+  background-image: url(https://media.wired.co.uk/photos/606d9b9d938ecee6e930e4fc/master/w_1600%2Cc_limit/f_craterfarm.jpg);
+  border-radius: 50%;
+  background-size: cover;
+  box-shadow: -20px -20px 50px 2px #000 inset, 0 0 20px #000;
+  animation: spin 30s linear alternate infinite;
+}
 @keyframes spin {
   100% {
     background-position: 100%;
