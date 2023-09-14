@@ -1,236 +1,97 @@
+
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        body{
-          font-family: Helvetica, sans-serif;
-        }
-
-        .heading{
-            text-align: center;
-            margin-top: 50px;
-        }
-
-        .wrapper{
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .pie-wrap{
-            border: 2px solid lightgrey;
-            width: 400px;
-            height: 400px;
-            margin: 10% 50px;
-            position: relative;
-            border-radius: 50%;
-            color: black;
-            overflow: hidden;
-        }
-
-        .pie-wrap .entry{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-
-        /* *the individual entries* */
-
-        .sky-blue{
-            background-color: lightskyblue;
-            height:50%;
-            width: 50%;
-            display: block;
-        }
-
-        .light-yellow{
-            background-color: lightyellow;
-            height:50%;
-            width: 50%;
-        }
-
-        .pink{
-            background-color: pink;
-            height:50%;
-            position: absolute;
-            top: 0px;
-            right: 0;
-            width: 50%;
-            clip-path: polygon(0 0, 100% 0%, 0% 100%);
-        }
-
-        .purple{
-            background-color: purple;
-            height:50%;
-            width: 50%;
-            right: 0;
-            top: 0;
-            position: absolute;
-            clip-path:polygon(0% 100%, 100% 0%, 100% 100%);
-        }
-
-        .green{
-            background-color: limegreen;
-            height:50%;
-            width: 50%;
-            right: 0;
-            top: 50%;
-            position: absolute;
-            clip-path:polygon(0% 0%, 100% 0%, 100% 100%);
-        }
-
-        .wheat{
-            background-color: wheat;
-            height:50%;
-            width: 50%;
-            right: 0;
-            top: 50%;
-            position: absolute;
-            clip-path:polygon(0% 0%, 100% 100%, 0% 100%);
-        }
-
-        .pie-wrap .purple p{
-            position: absolute;
-            top: 140px;
-            color: white;
-        }
-        .pie-wrap .purple p:first-child{
-            top: 120px;
-        }
-
-        .pie-wrap .green p{
-            position: absolute;
-            top: 20px;
-        }
-
-        .pie-wrap .green p:first-child{
-            top: 0px;
-        }
-
-        .pie-wrap .pink p, .pie-wrap .wheat p{
-            position: absolute;
-            left: 20px;
-            top: 80px;
-        }
-
-        .pie-wrap .pink, .pie-wrap .wheat{
-            justify-content: flex-start;
-        }
-
-        .pie-wrap .pink p:first-child, .pie-wrap .wheat p:first-child{
-            top: 100px;
-        }
-
-        .entry .entry-value{
-            display: none;
-            transition: all 500ms linear;
-        }
-        .entry:hover .entry-value{
-            display: block;
-        }
-
-        .entry{
-         transition: all 500ms linear ;
-        }
-        .entry:hover{
-            filter: invert();
-        }
-
-        .key-wrap label{
-            display: block;
-            border: 1px solid;
-            width: 80px;
-            text-align: center;
-            padding: 10px 15px;
-            cursor: pointer;
-            margin-bottom: 8px;
-            }
-
-            input[type="radio"]{
-                display: none;
-            }
-
-            .oxygen-label{
-                background-color: lightyellow;
-            }
-            .sodium-label{
-                background-color: pink;
-            }
-            .hydrogen-label{
-                background-color: purple;
-                color: white;
-            }
-            .helium-label{
-                background-color: limegreen;
-            }
-            .potassium-label{
-                background-color: wheat;
-            }
-            .argon-label{
-                background-color: skyblue;
-            }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mercury</title>
+  <link rel="stylesheet" href="/mercury.css"/>
+  <link href="https://fonts.cdnfonts.com/css/metropolis-2" rel="stylesheet">
+                
 </head>
+
 <body>
-    <h1 class="heading">atmospheric composition</h1>
-    <div class="wrapper">
-    
-    <div class="pie-wrap">
-        
-        <div class="light-yellow entry">
-            <p>25%</p>
-            <p class="entry-value"> Oxygen</p>
-        </div>
-
-        <div class="sky-blue entry">
-            <p>25%</p>
-            <p class="entry-value">Sodium</p>
-        </div>
-
-        <div class="pink entry">
-            <p>12.5%</p>
-            <p class="entry-value">Hydrogen </p>
-        </div>
-
-        <div class="purple entry">
-            <p> 12.5%</p>
-            <p class="entry-value">Helium</p>
-        </div>
-
-        <div class="green entry">
-            <p> 12.5%</p>
-            <p class="entry-value">Potassium</p>
-        </div>
-
-        <div class="wheat entry">
-            <p> 12.5%</p>
-            <p class="entry-value"> Argon</p>
-        </div>
-
+  <section class="header_hero">
+  
+    <div class="floating_text_hero_box">
+      <h1 class="media_feature_title">
+        Mercury
+      </h1>
+      <div class="description">
+        From the surface of Mercury, the Sun would appear more than three times as large as it does when viewed from
+        Earth, and the sunlight would be as much as 11 times brighter.
+      </div>
     </div>
-    
-    <div class="key-wrap">
-        <input type="radio" id="oxygen" name="values" class="oxygen-key"/>
-        <label for="oxygen" class="oxygen-label">Oxygen</label>
-        
-        <input type="radio" name="values" id="sodium" class="sodium-key"/>
-        <label for="sodium" class="sodium-label">Sodium</label>
-        
-        <input type="radio" name="values" id="hydrogen" class="hydrogen-key"/>
-        <label for="hydrogen" class="hydrogen-label"> Hydrogen</label>
-        
-        <input type="radio" name="values" id="helium" class="helium-key"/>
-        <label for="helium" class="helium-label">Helium</label>
-        
-        <input type="radio" name="values" id="potassium" class="potassium-key"/>
-        <label for="potassium" class="potassium-label"> Potassium</label>
-        
-        <input type="radio" name="values" id="argon" class="argon-key"/>
-        <label for="argon" class="argon-label">  Argon</label>
+    <div class="earth-box">
+      <div class="earth"></div>
     </div>
+    <div class="bottom_text_hero_box">
+      <div class="title-1">Distance from Sun</div>
+      <div class="title-2">One Way Light Time TO The Sun </div>
+      <div class="title-3">Length of Year</div>
+      <div class="title-4">Planet Type</div>
+    </div>
+  </section>
+  </div>
+
+
+  <h1 class="heading">atmospheric composition</h1>
+  <div class="wrapper">
+  
+  <div class="pie-wrap">
+      
+      <div class="light-yellow entry">
+          <p>25%</p>
+          <p class="entry-value"> Oxygen</p>
+      </div>
+
+      <div class="sky-blue entry">
+          <p>25%</p>
+          <p class="entry-value">Sodium</p>
+      </div>
+
+      <div class="pink entry">
+          <p>12.5%</p>
+          <p class="entry-value">Hydrogen </p>
+      </div>
+
+      <div class="purple entry">
+          <p> 12.5%</p>
+          <p class="entry-value">Helium</p>
+      </div>
+
+      <div class="green entry">
+          <p> 12.5%</p>
+          <p class="entry-value">Potassium</p>
+      </div>
+
+      <div class="wheat entry">
+          <p> 12.5%</p>
+          <p class="entry-value"> Argon</p>
+      </div>
+
+  </div>
+  
+  <div class="key-wrap">
+      <input type="radio" id="oxygen" name="values" class="oxygen-key"/>
+      <label for="oxygen" class="oxygen-label">Oxygen</label>
+      
+      <input type="radio" name="values" id="sodium" class="sodium-key"/>
+      <label for="sodium" class="sodium-label">Sodium</label>
+      
+      <input type="radio" name="values" id="hydrogen" class="hydrogen-key"/>
+      <label for="hydrogen" class="hydrogen-label"> Hydrogen</label>
+      
+      <input type="radio" name="values" id="helium" class="helium-key"/>
+      <label for="helium" class="helium-label">Helium</label>
+      
+      <input type="radio" name="values" id="potassium" class="potassium-key"/>
+      <label for="potassium" class="potassium-label"> Potassium</label>
+      
+      <input type="radio" name="values" id="argon" class="argon-key"/>
+      <label for="argon" class="argon-label">  Argon</label>
+  </div>
 </body>
+
 </html>
