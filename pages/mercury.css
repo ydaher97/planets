@@ -245,10 +245,10 @@ transition: all 500ms linear ;
       background-color: lightyellow;
   }
   .sodium-label{
-      background-color: pink;
+      background-color:skyblue;
   }
   .hydrogen-label{
-      background-color: purple;
+      background-color:  pink;
       color: white;
   }
   .helium-label{
@@ -258,5 +258,5 @@ transition: all 500ms linear ;
       background-color: wheat;
   }
   .argon-label{
-      background-color: skyblue;
+      background-color: purple;
   }
