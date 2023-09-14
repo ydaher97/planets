@@ -9,6 +9,25 @@ body {
     object-fit: cover;
     
 }
+.media_feature_title
+                    {
+                        display: block ;
+                        font-family: sans-serif;
+                        color:#fff;
+                        margin-bottom: 0.8rem;
+                        font-size: 60px;
+                        line-height: 1.2;
+                        letter-spacing: -2.08px;
+                    }
+.description
+                    {
+                        color:#fff;
+                        font-size: 19px;
+                        font-weight: 500;
+                        line-height: 1.421;
+                        max-width: none;
+                    }
+
 #galaxy-logo
             {
                 display: block;
