@@ -1,10 +1,35 @@
 /* Reset some default styles */
-body, ul, li {
+body {
     margin: 0;
     padding: 0;
+    background-image: url('https://solarsystem.nasa.gov/internal_resources/6059/beyondhero.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    object-fit: cover;
     
 }
+#galaxy-logo
+            {
+                display: block;
+                width: 100;
+                height: 100;
+            }
+.floating_text_area
+{
+   display:flex
+   
+   
+}
 
+.navbar-links.img
+{
+    width: 100px;
+    height:100px;
+}
+ul, li { margin: 0;
+         padding: 0;
+       } 
 /* Navbar styles */
 .navbar {
     background-color: #002776;
